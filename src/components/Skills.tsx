@@ -146,8 +146,8 @@ const Skills = () => {
             </div>
             <div className="w-px h-12 bg-gray-300"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-emerald-600">5+</div>
-              <div className="text-sm text-gray-600">Projects Built</div>
+              <div className="text-2xl font-bold text-emerald-600">2</div>
+              <div className="text-sm text-gray-600">Personal Projects Built</div>
             </div>
           </div>
         </div>
