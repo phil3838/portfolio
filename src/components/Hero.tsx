@@ -22,19 +22,10 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Profile Image */}
-        <div className="mb-8 animate-fade-in-up">
-          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 shadow-2xl">
-            <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-4xl font-bold text-gray-600">
-              JS
-            </div>
-          </div>
-        </div>
 
-        {/* Main Content */}
         <div className="animate-fade-in-up animation-delay-300">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            John <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Smith</span>
+            Philippe <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Côté</span>
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-gray-600 mb-6 font-light">
@@ -42,11 +33,10 @@ const Hero = () => {
           </h2>
           
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Recent CS graduate with a passion for building scalable applications and 
-            automating deployment processes. Ready to contribute to innovative projects.
+            Fresh Software Engineering grad from École de technologie supérieure with an insatiable 
+            curiosity for technology and a drive to build meaningful applications.
           </p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <button
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
@@ -55,25 +45,20 @@ const Hero = () => {
               View My Work
               <ExternalLink size={20} />
             </button>
-            
-            <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-blue-500 hover:text-blue-600 transition-all duration-200 flex items-center justify-center gap-2">
-              Download Resume
-              <Download size={20} />
-            </button>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 max-w-md mx-auto mb-12">
             <div className="text-center">
-              <div className="text-3xl font-bold text-gray-900 mb-1">1+</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">1</div>
               <div className="text-sm text-gray-600">Year Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gray-900 mb-1">15+</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">5+</div>
               <div className="text-sm text-gray-600">Projects Built</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gray-900 mb-1">5+</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">20+</div>
               <div className="text-sm text-gray-600">Technologies</div>
             </div>
           </div>

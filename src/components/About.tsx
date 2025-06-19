@@ -5,23 +5,23 @@ const About = () => {
   const achievements = [
     {
       icon: <GraduationCap className="w-6 h-6" />,
-      title: "Computer Science Graduate",
-      description: "Recent graduate with strong foundation in software engineering"
+      title: "Software Engineer Graduate",
+      description: "Graduated from ÉTS with hands-on training in DevOps, OS, and software architecture"
     },
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Full Stack Development",
-      description: "1+ year experience building modern web applications"
+      title: "Fullstack Intern @ Flare Systems",
+      description: "Improved an AI assistant, deployed Python services, and boosted client satisfaction"
     },
     {
       icon: <Award className="w-6 h-6" />,
-      title: "DevOps Enthusiast",
-      description: "Passionate about CI/CD, containerization, and cloud deployment"
+      title: "DevOps-Focused Developer",
+      description: "Optimized CI/CD at Hydro-Québec & Loto-Québec; automated Prometheus and Grafana deployment"
     },
     {
       icon: <Briefcase className="w-6 h-6" />,
-      title: "Open Source Contributor",
-      description: "Active contributor to various open-source projects"
+      title: "Leader & Organizer",
+      description: "President of Lan ETS; managed $320K+ budget and earned 'Esport Event of the Year' in 2023"
     }
   ];
 
@@ -32,9 +32,6 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Me</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Recent graduate passionate about creating innovative digital solutions
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -42,35 +39,27 @@ const About = () => {
           <div className="space-y-6">
             <div className="prose prose-lg text-gray-600">
               <p className="text-lg leading-relaxed mb-6">
-                As a recent Computer Science graduate with 1+ year of hands-on experience in 
-                full-stack development and DevOps, I'm passionate about building scalable web 
-                applications and streamlining deployment processes. My journey combines academic 
-                knowledge with practical industry experience.
+                I'm Philippe, a software engineer from ÉTS with hands-on experience in full-stack and DevOps roles across organizations like Flare Systems, Hydro-Québec, and Loto-Québec. I’ve developed production-grade systems, optimized pipelines, and contributed to significant operational savings.
               </p>
-              
+
               <p className="text-lg leading-relaxed mb-6">
-                I specialize in modern web technologies like React, Node.js, and cloud platforms, 
-                with a strong focus on DevOps practices including CI/CD pipelines, containerization, 
-                and infrastructure automation. I'm eager to contribute to innovative projects and 
-                continue growing my technical expertise.
+                I love working on impactful projects—from improving an AI Assistant’s performance to deploying Grafana dashboards at scale. I’ve also launched open-source quiz platforms, containerized microservices with observability tools, and explored AIOps for smarter monitoring.
               </p>
 
               <p className="text-lg leading-relaxed">
-                Currently seeking opportunities to apply my skills in a dynamic environment where 
-                I can contribute to meaningful projects while continuing to learn and develop as 
-                a software engineer.
-              </p>
+            Beyond code, I lead large-scale events as President of Lan ETS and Ops Team Lead at Dreamhack. I'm always seeking opportunities where I can merge technical skills with initiative to create, optimize, and lead.
+          </p>
             </div>
 
             {/* Quick Info */}
             <div className="grid grid-cols-2 gap-6 pt-6 border-t border-gray-200">
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-blue-600" />
-                <span className="text-gray-700">San Francisco, CA</span>
+                <span className="text-gray-700">Montreal, QC</span>
               </div>
               <div className="flex items-center gap-3">
                 <GraduationCap className="w-5 h-5 text-blue-600" />
-                <span className="text-gray-700">CS Graduate</span>
+                <span className="text-gray-700">Software Engineer Graduate</span>
               </div>
               <div className="flex items-center gap-3">
                 <Briefcase className="w-5 h-5 text-blue-600" />
@@ -78,7 +67,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Code className="w-5 h-5 text-blue-600" />
-                <span className="text-gray-700">1+ Year Experience</span>
+                <span className="text-gray-700">1 Year Experience</span>
               </div>
             </div>
           </div>

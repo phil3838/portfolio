@@ -13,7 +13,7 @@ function App() {
     document.documentElement.style.scrollBehavior = 'smooth';
     
     // Update page title
-    document.title = 'John Smith - Full Stack Developer & DevOps Engineer';
+    document.title = 'Philippe Côté - Full Stack Developer & DevOps Engineer';
     
     return () => {
       document.documentElement.style.scrollBehavior = 'auto';
