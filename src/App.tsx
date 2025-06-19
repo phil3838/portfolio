@@ -9,10 +9,8 @@ import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
-    // Add smooth scrolling for the entire page
     document.documentElement.style.scrollBehavior = 'smooth';
     
-    // Update page title
     document.title = 'Philippe Côté - Full Stack Developer & DevOps Engineer';
     
     return () => {

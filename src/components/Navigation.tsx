@@ -69,7 +69,7 @@ const Navigation = () => {
                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:contact@example.com"
+              <a href="mailto:pc@philcote.ca"
                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200">
                 <Mail size={20} />
               </a>

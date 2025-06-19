@@ -42,8 +42,7 @@ const Contact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-
-            {/* Contact Details */}
+ 
             <div className="flex flex-wrap justify-center gap-6 mb-12">
               {contactInfo.map((item, index) => (
                 <a
@@ -64,7 +63,6 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Social Links */}
             <div className="text-center">
               <h4 className="font-semibold text-gray-900 mb-6">Follow Me</h4>
               <div className="flex justify-center gap-4 mb-8">
@@ -83,7 +81,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Availability Status */}
             <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-xl border border-green-200 text-center max-w-2xl mx-auto">
               <div className="flex items-center justify-center gap-3 mb-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>

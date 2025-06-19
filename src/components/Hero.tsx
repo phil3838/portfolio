@@ -11,10 +11,8 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
       
-      {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-4 -right-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
         <div className="absolute -bottom-8 -left-4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
@@ -47,7 +45,6 @@ const Hero = () => {
             </button>
           </div>
 
-          {/* Stats */}
           <div className="grid grid-cols-3 gap-8 max-w-md mx-auto mb-12">
             <div className="text-center">
               <div className="text-3xl font-bold text-gray-900 mb-1">1</div>
@@ -64,10 +61,9 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
         <button
           onClick={scrollToAbout}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-blue-600 transition-colors duration-200"
+          className="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-blue-600 transition-colors duration-200"
         >
           <ChevronDown size={32} />
         </button>

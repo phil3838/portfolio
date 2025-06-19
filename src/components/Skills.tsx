@@ -78,7 +78,6 @@ const Skills = () => {
           </p>
         </div>
 
-        {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {skillCategories.map((category) => (
             <button
@@ -96,7 +95,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSkills.map((skill, index) => (
             <div
@@ -135,7 +133,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Skills Summary */}
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-4 bg-white px-8 py-4 rounded-2xl shadow-lg border border-gray-200">
             <div className="text-center">

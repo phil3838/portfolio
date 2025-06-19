@@ -35,7 +35,6 @@ const About = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Bio Section */}
           <div className="space-y-6">
             <div className="prose prose-lg text-gray-600">
               <p className="text-lg leading-relaxed mb-6">
@@ -50,8 +49,7 @@ const About = () => {
                 Beyond code, I lead large-scale events as President of Lan ETS and Ops Team Lead at Dreamhack. I'm always seeking opportunities where I can merge technical skills with initiative to create, optimize, and lead.
               </p>
             </div>
-
-            {/* Quick Info */}
+            
             <div className="grid grid-cols-2 gap-6 pt-6 border-t border-gray-200">
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-blue-600" />
@@ -72,12 +70,11 @@ const About = () => {
             </div>
           </div>
 
-          {/* Profile Image Placeholder */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 rounded-2xl bg-gradient-to-br from-blue-100 to-purple-100 shadow-2xl flex items-center justify-center">
                 <img
-                  src="/philippe.jpg" // Replace with your image path
+                  src="/philippe.jpg"
                   alt="Philippe Côté"
                   className="object-cover w-full h-full rounded-2xl"
                 />
@@ -86,7 +83,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Achievements Grid */}
         <div>
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Key Highlights</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
