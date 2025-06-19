@@ -61,11 +61,11 @@ const Navigation = () => {
             </button>
             
             <div className="flex space-x-4 ml-8">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://github.com/phil3838" target="_blank" rel="noopener noreferrer" 
                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/philippecote1/" target="_blank" rel="noopener noreferrer"
                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200">
                 <Linkedin size={20} />
               </a>

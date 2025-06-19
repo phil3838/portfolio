@@ -10,12 +10,6 @@ const Contact = () => {
       href: 'mailto:pc@philcote.ca'
     },
     {
-      icon: <Phone className="w-6 h-6" />,
-      label: 'Phone',
-      value: '+1 (438) 3994384',
-      href: 'tel:+14383994384'
-    },
-    {
       icon: <MapPin className="w-6 h-6" />,
       label: 'Location',
       value: 'Montreal, QC',
@@ -27,27 +21,15 @@ const Contact = () => {
     {
       icon: <Github className="w-5 h-5" />,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/phil3838',
       color: 'hover:text-gray-900'
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/philippecote1/',
       color: 'hover:text-blue-600'
     },
-    {
-      icon: <Twitter className="w-5 h-5" />,
-      label: 'Twitter',
-      href: 'https://twitter.com',
-      color: 'hover:text-blue-400'
-    },
-    {
-      icon: <MessageCircle className="w-5 h-5" />,
-      label: 'Discord',
-      href: 'https://discord.com',
-      color: 'hover:text-indigo-600'
-    }
   ];
 
   return (
@@ -57,25 +39,12 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Get In <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Touch</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ready to start your next project? Let's work together to create something amazing.
-          </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Let's Talk</h3>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-                I'm always interested in new opportunities and exciting projects. 
-                Whether you have a question, want to discuss a potential collaboration, 
-                or just want to say hello, I'd love to hear from you.
-              </p>
-            </div>
 
             {/* Contact Details */}
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="flex flex-wrap justify-center gap-6 mb-12">
               {contactInfo.map((item, index) => (
                 <a
                   key={index}
@@ -127,7 +96,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };
