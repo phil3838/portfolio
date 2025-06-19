@@ -13,6 +13,7 @@ import {
 const Skills = () => {
   const [filter, setFilter] = useState('all');
   const [animatedSkills, setAnimatedSkills] = useState<Set<number>>(new Set());
+  const PROFICIENCY_LABEL = 'Proficiency: ';
 
   const skillCategories = [
     { id: 'all', label: 'All Skills', icon: <Code className="w-4 h-4" /> },
@@ -24,37 +25,21 @@ const Skills = () => {
   ];
 
   const skills = [
-    // Frontend
-    { name: 'React', category: 'frontend', proficiency: 85, years: '1+', color: 'from-blue-500 to-cyan-500' },
-    { name: 'TypeScript', category: 'frontend', proficiency: 80, years: '1+', color: 'from-blue-600 to-blue-700' },
-    { name: 'JavaScript', category: 'frontend', proficiency: 90, years: '2+', color: 'from-yellow-500 to-orange-500' },
-    { name: 'HTML/CSS', category: 'frontend', proficiency: 95, years: '2+', color: 'from-orange-500 to-red-500' },
-    { name: 'Tailwind CSS', category: 'frontend', proficiency: 85, years: '1+', color: 'from-cyan-500 to-blue-500' },
-    
-    // Backend
-    { name: 'Node.js', category: 'backend', proficiency: 80, years: '1+', color: 'from-green-600 to-green-700' },
-    { name: 'Python', category: 'backend', proficiency: 75, years: '1+', color: 'from-yellow-500 to-blue-600' },
-    { name: 'Express.js', category: 'backend', proficiency: 78, years: '1+', color: 'from-gray-600 to-gray-800' },
-    { name: 'REST APIs', category: 'backend', proficiency: 82, years: '1+', color: 'from-purple-500 to-purple-600' },
-    
-    // Database
-    { name: 'PostgreSQL', category: 'database', proficiency: 75, years: '1+', color: 'from-blue-700 to-blue-800' },
-    { name: 'MongoDB', category: 'database', proficiency: 70, years: '1+', color: 'from-green-700 to-green-800' },
-    { name: 'MySQL', category: 'database', proficiency: 72, years: '1+', color: 'from-blue-600 to-orange-600' },
-    
-    // DevOps
-    { name: 'Docker', category: 'devops', proficiency: 75, years: '1+', color: 'from-blue-600 to-blue-700' },
-    { name: 'AWS', category: 'devops', proficiency: 70, years: '1+', color: 'from-orange-500 to-yellow-500' },
-    { name: 'CI/CD', category: 'devops', proficiency: 72, years: '1+', color: 'from-green-600 to-blue-600' },
-    { name: 'Linux', category: 'devops', proficiency: 78, years: '1+', color: 'from-gray-700 to-black' },
-    { name: 'Nginx', category: 'devops', proficiency: 68, years: '1+', color: 'from-green-700 to-green-800' },
-    
-    // Tools
-    { name: 'Git', category: 'tools', proficiency: 88, years: '2+', color: 'from-orange-600 to-red-600' },
-    { name: 'VS Code', category: 'tools', proficiency: 95, years: '2+', color: 'from-blue-600 to-cyan-600' },
-    { name: 'Postman', category: 'tools', proficiency: 85, years: '1+', color: 'from-orange-500 to-red-500' },
-    { name: 'Jest', category: 'tools', proficiency: 70, years: '1+', color: 'from-red-600 to-orange-600' }
-  ];
+  { name: 'Java',         category: 'backend',  proficiency: 60, color: 'from-red-600 to-red-700' },
+  { name: 'Python',       category: 'backend',  proficiency: 70, color: 'from-yellow-500 to-blue-600' },
+  { name: 'SQL',          category: 'database', proficiency: 70, color: 'from-blue-700 to-blue-800' },
+  { name: 'PostgreSQL',   category: 'database', proficiency: 50, color: 'from-blue-700 to-blue-800' },
+  { name: 'HTML',         category: 'frontend', proficiency: 80, color: 'from-orange-500 to-red-500' },
+  { name: 'Tailwind CSS', category: 'frontend', proficiency: 50, color: 'from-cyan-500 to-blue-500' },
+  { name: 'TypeScript',   category: 'frontend', proficiency: 60, color: 'from-blue-600 to-blue-700' },
+  { name: 'ReactJS',      category: 'frontend', proficiency: 70, color: 'from-blue-500 to-cyan-500' },
+  { name: 'VueJS',        category: 'frontend', proficiency: 60, color: 'from-green-500 to-green-600' },
+  { name: 'Ansible',      category: 'devops',   proficiency: 50, color: 'from-blue-600 to-blue-700' },
+  { name: 'AWS',          category: 'devops',   proficiency: 40, color: 'from-orange-500 to-yellow-500' },
+  { name: 'Docker',       category: 'devops',   proficiency: 60, color: 'from-blue-600 to-blue-700' },
+  { name: 'Git',          category: 'tools',    proficiency: 80, color: 'from-orange-600 to-red-600' },
+  { name: 'Postman',      category: 'tools',    proficiency: 60, color: 'from-orange-500 to-red-500' },
+];
 
   const filteredSkills = filter === 'all' 
     ? skills 
@@ -125,7 +110,7 @@ const Skills = () => {
                   {skill.name}
                 </h3>
                 <div className="flex items-center gap-2">
-                  <span className="text-sm text-gray-500">{skill.years}</span>
+                  <span className="text-sm text-gray-500">{PROFICIENCY_LABEL}</span>
                   <span className="text-sm font-semibold text-gray-900">{skill.proficiency}%</span>
                 </div>
               </div>
@@ -154,17 +139,17 @@ const Skills = () => {
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-4 bg-white px-8 py-4 rounded-2xl shadow-lg border border-gray-200">
             <div className="text-center">
-              <div className="text-2xl font-bold text-blue-600">{skills.length}+</div>
+              <div className="text-2xl font-bold text-blue-600">{skills.length}</div>
               <div className="text-sm text-gray-600">Technologies</div>
             </div>
             <div className="w-px h-12 bg-gray-300"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-purple-600">1+</div>
+              <div className="text-2xl font-bold text-purple-600">1</div>
               <div className="text-sm text-gray-600">Year Experience</div>
             </div>
             <div className="w-px h-12 bg-gray-300"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-emerald-600">15+</div>
+              <div className="text-2xl font-bold text-emerald-600">5+</div>
               <div className="text-sm text-gray-600">Projects Built</div>
             </div>
           </div>

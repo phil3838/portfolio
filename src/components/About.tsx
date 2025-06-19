@@ -47,8 +47,8 @@ const About = () => {
               </p>
 
               <p className="text-lg leading-relaxed">
-            Beyond code, I lead large-scale events as President of Lan ETS and Ops Team Lead at Dreamhack. I'm always seeking opportunities where I can merge technical skills with initiative to create, optimize, and lead.
-          </p>
+                Beyond code, I lead large-scale events as President of Lan ETS and Ops Team Lead at Dreamhack. I'm always seeking opportunities where I can merge technical skills with initiative to create, optimize, and lead.
+              </p>
             </div>
 
             {/* Quick Info */}
@@ -76,10 +76,11 @@ const About = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 rounded-2xl bg-gradient-to-br from-blue-100 to-purple-100 shadow-2xl flex items-center justify-center">
-                <div className="text-6xl font-bold text-gray-400">Photo</div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
-                <Code className="w-12 h-12 text-white" />
+                <img
+                  src="/philippe.jpg" // Replace with your image path
+                  alt="Philippe Côté"
+                  className="object-cover w-full h-full rounded-2xl"
+                />
               </div>
             </div>
           </div>
