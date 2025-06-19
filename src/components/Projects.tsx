@@ -11,7 +11,7 @@ const Projects = () => {
       description:
         'Web application to help users improve at trivia using a dataset of over 4,000 questions and answers. Implements data-driven question selection and performance feedback. Python scripts (PyPDF2 & pandas) parse, lint and structurally organize all Q&A data.',
       category: 'fullstack',
-      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
+      image: 'public/trivia-app.png',
       technologies: ['Angular', 'TypeScript', 'Python', 'PyPDF2', 'pandas'],
       liveUrl: 'https://geh-training.netlify.app/',
       githubUrl: 'https://github.com/phil3838/GEH-training',
@@ -28,7 +28,7 @@ const Projects = () => {
       title: 'Personal Portfolio Website',
       description: 'Modern, responsive portfolio website built with React and Tailwind CSS. Features smooth animations and optimized performance.',
       category: 'frontend',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg',
+      image: 'public/web-portfolio.png',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
       liveUrl: '',
       githubUrl: 'https://github.com/phil3838/portfolio',
