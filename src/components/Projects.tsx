@@ -44,6 +44,44 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: 'Évalue ton savoir',
+      description: 'Open-source interactive quiz platform for school - an alternative to Kahoot and Socrative',
+      category: 'fullstack',
+      image: '/evalsa.png',
+      technologies: ['TypeScript', 'CSS', 'MongoDB'],
+      liveUrl: 'https://evaluetonsavoir.vercel.app/',
+      githubUrl: 'https://github.com/ets-cfuhrman-pfe/EvalueTonSavoir',
+      role: 'Student',
+      team: 'Team of 5',
+      duration: '4 months',
+      features: [
+        'Interactive live quiz sessions with real-time feedback',
+        'Intuitive quiz creation with LaTeX support for math and science formatting',
+        'Flexible quiz import options to easily share content across formats for educators and students'
+      ]
+    },
+    {
+      id: 4,
+      title: 'End-to-End Observability in Microservices',
+      description: 'Proof-of-concept microservice architecture focused on observability and proactive issue detection. The project showcases full-stack monitoring using OpenTelemetry, Jaeger, Loki, and Grafana. Real-time system health is tracked, with alerts pushed to Discord.',
+      category: 'devops',
+      image: '/observability.png',
+      technologies: ['Docker', 'Grafana', 'OpenTelemetry', 'Loki'],
+      liveUrl: '',
+      githubUrl: 'https://github.com/JereDacosta/GameStoreMicroservices',
+      role: 'Student',
+      team: 'Team of 2',
+      duration: '3 months',
+      features: [
+  'Containerized microservices built with Docker and C#',
+  'Distributed tracing implemented with OpenTelemetry and Jaeger',
+  'Centralized logging using Loki and visualization via Grafana',
+  'Real-time Discord alerts for performance degradation',
+  'Applied AIOps techniques for log analysis and predictive issue detection'
+],
+    },
+    {
+      id: 5,
       title: 'Personal Portfolio Website',
       description: 'Modern, responsive portfolio website built with React and Tailwind CSS. Features smooth animations and optimized performance.',
       category: 'frontend',
@@ -69,6 +107,7 @@ const Projects = () => {
     { id: 'fullstack', label: 'Full Stack' },
     { id: 'frontend', label: 'Frontend' },
     { id: 'backend', label: 'Backend' },
+    { id: 'devops', label: 'DevOps' },
   ];
 
   const filteredProjects = filter === 'all'
@@ -90,8 +129,8 @@ const Projects = () => {
               key={category.id}
               onClick={() => setFilter(category.id)}
               className={`flex items-center gap-2 px-6 py-3 rounded-full transition-all duration-200 ${filter === category.id
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
-                  : 'bg-gray-100 text-gray-600 hover:text-blue-600 hover:bg-gray-200'
+                ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                : 'bg-gray-100 text-gray-600 hover:text-blue-600 hover:bg-gray-200'
                 }`}
             >
               <Filter size={16} />
