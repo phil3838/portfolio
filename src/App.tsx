@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     document.documentElement.style.scrollBehavior = 'smooth';
     
-    document.title = 'Philippe Côté - Full Stack Developer & DevOps Engineer';
+    document.title = 'Philippe Côté';
     
     return () => {
       document.documentElement.style.scrollBehavior = 'auto';

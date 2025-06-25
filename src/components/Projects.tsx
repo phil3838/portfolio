@@ -25,6 +25,25 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: 'New Job Notifier',
+      description:
+        'Python script that monitors job listings on specific company websites and send notifications via Discord when new job opportunities are discovered.',
+      category: 'backend',
+      image: '/job_notifier.png',
+      technologies: ['Selenium', 'Discord_Webhook', 'Python'],
+      githubUrl: 'https://github.com/phil3838/New-Job-Notifier',
+      role: 'Backend Developer',
+      team: 'Solo Project',
+      duration: 'In progress',
+      features: [
+        'Daily webscraping',
+        'Tracking and comparing job listings',
+        'User notified by Discord',
+        'JSON-based job listing storage',
+      ]
+    },
+    {
+      id: 3,
       title: 'Personal Portfolio Website',
       description: 'Modern, responsive portfolio website built with React and Tailwind CSS. Features smooth animations and optimized performance.',
       category: 'frontend',
