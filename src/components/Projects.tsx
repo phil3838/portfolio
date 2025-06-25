@@ -68,6 +68,7 @@ const Projects = () => {
     { id: 'all', label: 'All Projects' },
     { id: 'fullstack', label: 'Full Stack' },
     { id: 'frontend', label: 'Frontend' },
+    { id: 'backend', label: 'Backend' },
   ];
 
   const filteredProjects = filter === 'all'
