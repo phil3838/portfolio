@@ -44,26 +44,11 @@ const Hero = () => {
               <ExternalLink size={20} />
             </button>
           </div>
-
-          <div className="grid grid-cols-3 gap-8 max-w-md mx-auto mb-12">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-gray-900 mb-1">1</div>
-              <div className="text-sm text-gray-600">Year Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-gray-900 mb-1">5+</div>
-              <div className="text-sm text-gray-600">Projects Built</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-gray-900 mb-1">20+</div>
-              <div className="text-sm text-gray-600">Technologies</div>
-            </div>
-          </div>
         </div>
 
         <button
           onClick={scrollToAbout}
-          className="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-blue-600 transition-colors duration-200"
+          className="absolute transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-blue-600 transition-colors duration-200"
         >
           <ChevronDown size={32} />
         </button>

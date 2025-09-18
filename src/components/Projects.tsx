@@ -7,24 +7,6 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Trivia Training App',
-      description:
-        'Web application to help users improve at trivia using a dataset of over 4,000 questions and answers. Implements data-driven question selection and performance feedback. Python scripts (PyPDF2 & pandas) parse, lint and structurally organize all Q&A data.',
-      category: 'fullstack',
-      image: '/trivia-app.png',
-      technologies: ['Angular', 'TypeScript', 'Python', 'PyPDF2', 'pandas'],
-      liveUrl: 'https://geh-training.netlify.app/',
-      githubUrl: 'https://github.com/phil3838/GEH-training',
-      role: 'Full Stack Developer',
-      team: 'Solo Project',
-      duration: '4 weeks',
-      features: [
-        'Data-driven question selection and performance feedback',
-        'Parsing, linting & structuring of 4,000+ Q&A with PyPDF2 and pandas'
-      ]
-    },
-    {
-      id: 2,
       title: 'New Job Notifier',
       description:
         'Python script that monitors job listings on specific company websites and send notifications via Discord when new job opportunities are discovered.',
@@ -43,7 +25,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 3,
+      id: 2,
       title: 'Évalue ton savoir',
       description: 'Open-source interactive quiz platform for school - an alternative to Kahoot and Socrative',
       category: 'fullstack',
@@ -58,6 +40,24 @@ const Projects = () => {
         'Interactive live quiz sessions with real-time feedback',
         'Intuitive quiz creation with LaTeX support for math and science formatting',
         'Flexible quiz import options to easily share content across formats for educators and students'
+      ]
+    },
+    {
+      id: 3,
+      title: 'Trivia Training App',
+      description:
+        'Web application to help users improve at trivia using a dataset of over 4,000 questions and answers. Implements data-driven question selection and performance feedback. Python scripts (PyPDF2 & pandas) parse, lint and structurally organize all Q&A data.',
+      category: 'fullstack',
+      image: '/trivia-app.png',
+      technologies: ['Angular', 'TypeScript', 'Python', 'PyPDF2', 'pandas'],
+      liveUrl: 'https://geh-training.netlify.app/',
+      githubUrl: 'https://github.com/phil3838/GEH-training',
+      role: 'Full Stack Developer',
+      team: 'Solo Project',
+      duration: '4 weeks',
+      features: [
+        'Data-driven question selection and performance feedback',
+        'Parsing, linting & structuring of 4,000+ Q&A with PyPDF2 and pandas'
       ]
     },
     {
@@ -250,25 +250,6 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <div className="inline-flex items-center gap-4 bg-gradient-to-r from-blue-50 to-purple-50 px-8 py-6 rounded-2xl border border-blue-100">
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                Interested in working together?
-              </h3>
-              <p className="text-gray-600">
-                Let's discuss your next project and bring your ideas to life.
-              </p>
-            </div>
-            <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-200"
-            >
-              Get In Touch
-            </button>
-          </div>
         </div>
       </div>
     </section>

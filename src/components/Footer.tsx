@@ -42,10 +42,7 @@ const Footer = () => {
 
 
           <div className="border-t border-gray-800 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <div className="text-gray-400 text-sm">
-                © {new Date().getFullYear()} Philippe Côté. All rights reserved.
-              </div>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4">
 
               <div className="flex items-center gap-2 text-gray-400 text-sm">
                 <span>Made with</span>
@@ -61,7 +58,7 @@ const Footer = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="mt-8 mx-auto flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white hover:shadow-lg transition-all duration-200 transform hover:scale-110"
           >
-            <div className="w-4 h-4 border-l-2 border-t-2 border-white transform rotate-45 -translate-y-0.5"></div>
+            <div className="w-4 h-4 border-l-2 border-t-2 border-white transform rotate-45 translate-y-0.5"></div>
           </button>
         </div>
       </div>
